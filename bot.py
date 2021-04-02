@@ -34,8 +34,8 @@ class Bot:
             self.fail(ex.msg)
 
     def login(self, username, password):
-        self.driver.find_element_by_xpath("//input[@name='username']").send_keys("alina_ish5")
-        self.driver.find_element_by_xpath("//input[@name='password']").send_keys("Barnan567")
+        self.driver.find_element_by_xpath("//input[@name='username']").send_keys("")
+        self.driver.find_element_by_xpath("//input[@name='password']").send_keys("")
         time.sleep(2)
         self.driver.find_element_by_xpath("//button[contains(.,'Log In')]").click()
         time.sleep(3)
